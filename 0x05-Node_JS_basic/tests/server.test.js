@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../full_server/server');
 
-describe('Task 8: Organize a Complex HTTP Server using Express', () => {
+describe('task 8: Organize a Complex HTTP Server using Express', () => {
   it('should return "Hello Holberton School!" with status 200', async () => {
     const response = await request(app).get('/');
     expect(response.statusCode).toBe(200);

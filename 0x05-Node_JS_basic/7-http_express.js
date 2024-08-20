@@ -14,7 +14,7 @@ app.get('/students', async (req, res) => {
     await countStudents(process.argv[2]);
     res.end();
   } catch (error) {
-    res.end(error.message);
+    res.status(500).end(error.message);
   }
 });
 
